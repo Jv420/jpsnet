@@ -1,76 +1,205 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-	<title>JPS Development</title>
-	<meta charset="utf-8">
-	<meta name="description" content="JPS Development Network">
-	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<script src="https://jv420.github.io/Duinotize/duinotize.js" defer></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:image" itemprop="image" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="jpsdevico.ico">
+    <script src="https://jv420.github.io/Duinotize/duinotize.js"></script>
+    <title>JPS Development</title>
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Overlay for background image */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: -1;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Navigation styles */
+        nav {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Your custom styles */
+        #text-area a {
+            color: #66ddcc;
+        }
+
+        #text-area a:hover {
+            color: #669999;
+        }
+
+        #startminer {
+            margin-right: -180px;
+            padding: 12px;
+            outline: none;
+            background-image: linear-gradient(-30deg, #297EFF, #73b9ff);
+            color: #ffffff;
+            font-size: 12px;
+            border: none;
+            border-radius: 18px;
+            font-family: "Poppins";
+            cursor: pointer;
+            box-shadow: 0 3px #999;
+        }
+
+        #startminer:hover {
+            background-image: linear-gradient(-30deg, #0f6fff, #62aefa);
+        }
+
+        #startminer:active {
+            background-image: linear-gradient(-30deg, #0f6fff, #62aefa);
+            box-shadow: 0 1px #999;
+            transform: translateY(4px);
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-	<header><h1>JPS Development</h1></header>
-<style> 
-    body {
-        background-color: #000;
-        color: #fff;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding-top: 200px;
-        }
+    <header>
+        <h1>Welcome to JPS Development</h1>
+        <p>Development Services Worldwide</p>
+    </header>
 
-        h1 {
-        font-size: 48px;
-        margin-bottom: 30px;
-        }
+    <nav>
+        <a href="about.html">About</a>
+        <a href="webshop.html">Webshop</a>
+        <a href="ads.html">Ads</a>
+        <a href="links.html">Links</a>
+        <a href="banners.html">Banners</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-        .blc-text {
-        font-size: 24px;
-        font-weight: bold;
-        }
-</style>
-<nav>
-<ul>
-	<li><a href="index.html">Home</a></li>
-	<li><a href="wiezijnwij.html">Wie zijn wij</a></li>
-	<li><a href="hobbys.html">Hobby’s</a></li>
-	<li><a href="links.html">Links</a></li>
-	<li><a href="ads.html">Advertenties</a></li>
-	<li><a href="contact.html">Contact</a></li>
-	<li><a href="webshop.html">WebWinkel</a></li>
-	<li><a href="donate.html">Donatie</a></li>
-</ul>
-</nav>
-<article>
-	<h1>Morbi aliquam mi quis volutpat</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum orci sit amet odio varius pulvinar. Quisque malesuada iaculis nibh, a vulputate orci rutrum sed. In vitae neque nibh. Maecenas semper dolor nec orci vestibulum cursus. Phasellus vel eros urna, at laoreet lorem.</p>
-<ul>
-	<li>Nam diam libero, vulputate non aliquet et, tempus consectetur magna.</li>
-	<li>Cum sociis natoque penatibus et magnis dis parturient montes.</li>
-	<li>Morbi consequat ornare arcu at convallis.</li>
-</ul>
-	<p>Nulla et lacus elit, id dapibus ante. Ut vulputate aliquam consequat. In nulla quam, consectetur in consequat quis, facilisis non nisi.</p>
-	<img alt="jpsdevlogo" src="https://jv420.github.io/jpsnet/images/jpsdevlogo.png" style="float: right;">
-	<h2>Uw Development Webshop</h2>
-	<p>Duis consectus vestibulum condimentum. Morbi bibendum, nisl id hendrerit rutrum, orci metus semper nulla, a condimentum augue turpis quis elit. Donec dolor velit, egestas sit amet faucibus non, placerat eget erat.</p>
-<ol>
-	<li>Etiam lectus neque, hendrerit in feugiat ac, malesuada eu arcu.</li>
-	<li>Ut ipsum dui, sollicitudin eget viverra a, hendrerit in sapien.</li>
-	<li>Proin hendrerit orci eget nulla tristique sit amet volutpat arcu.</li>
-	</ol>
-	<p>Ut auctor viverra turpis id tincidunt. Curabitur eu lectus non orci interdum sagittis at condimentum justo. Donec porttitor massa tortor, et malesuada odio. Sed eget nisl sit amet mauris tempor ultrices ut eget erat. Mauris sit amet erat quis risus vehicula fermentum. Nulla sollicitudin pulvinar venenatis.</p>
-</article>
-	
-</div>
-<footer>
-	<p>©2023 - JPS Development</p>
-</footer>
+    <div class="container">
+        <div class="main-content">
+            <h1>Empowering Your Digital Journey</h1>
+            <p>JPS Development specializes in custom development services. We collaborate with companies worldwide, delivering top-notch projects and tailored solutions to elevate your business.</p>
+            <p>Explore our services and products to enhance your digital presence.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 JPS Development. All Rights Reserved.</p>
+    </footer>
+	<script>
+      Duinotize({
+        username: "jpsdev",
+        rigid: "JPSDevelopment-WebSite"
+	  });
+	</script>
+	<script>
+      let buttonClicked = treu;
+              
+      function updatebutton() {
+        document.getElementById('startminer').value = 'Miner Started';
+        buttonClicked = true;
+      };
+                
+      function StartMining() {
+        var duinoopts = {
+          username: "jpsdev",
+          rigid: "JPSDevelopment-WebSite",
+          threads: 1,
+          difficulty: "LOW",
+          hasher: "DUCO-S1"
+        };
+
+      if (buttonClicked === treu) {
+        Duinotize(duinoopts, updatebutton());
+      };
+    };
+    </script>
 </body>
-<script>
-  Duinotize({
-    username: "jpsdev",
-    rigid: "JPS DuinotizeMiner"
-  });
-</script>
 </html>
