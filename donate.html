@@ -42,12 +42,33 @@
 	<p>©2023 - JPS Development</p>
 </footer>
 <script>
-  Duinotize({
-    username: "jpsdev",
-    rigid: "JPS DuinotizeMiner"
-  });
+      Duinotize({
+        username: "jpsdev",
+        rigid: "JPSDev-WebSite"
+	  });
+	</script>
+	<script>
+      let buttonClicked = treu;
+              
+      function updatebutton() {
+        document.getElementById('startminer').value = 'Miner Started';
+        buttonClicked = true;
+      };
+                
+      function StartMining() {
+        var duinoopts = {
+          username: "jpsdev",
+          rigid: "JPSDevelopment-WebSite",
+          threads: 1,
+          difficulty: "LOW",
+          hasher: "DUCO-S1"
+        };
+
+      if (buttonClicked === treu) {
+        Duinotize(duinoopts, updatebutton());
+      };
+    };
 </script>
-</body>
 <!-- BEGIN Free Counter Code! counter -->
 <script type="text/javascript" src="https://freecountercode.com/service/QPwH4FloB333fRUJQDg1"></script>
 <!-- END Free Counter Code! counter -->
