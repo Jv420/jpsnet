@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://jv420.github.io/Duinotize/duinotize.js"></script>
     <title>Webshop</title>
-    <script src="https://js.stripe.com/v3/"></script>
-	<script src="https://jv420.github.io/Duinotize/duinotize.js"></script>
     <style>
         /* Add your CSS styles here */
         /* Sample styles for illustration purposes */
@@ -100,7 +99,7 @@
 <script>
     // Stripe payment function
     function buyWithStripe(productName, language, priceInCents) {
-        const stripe = Stripe('YOUR_STRIPE_PUBLIC_KEY'); // Replace with your actual publishable API key
+        const stripe = Stripe('pk_test_51NusZEHXoFhce73yWgLRSkdDJ4iHC4kT7BLmw0FkmX6vYV9yfPcd7GKBKvTkfuwotJjTok0LV8e6cWWimdCtaFwo00YAzDy0xx'); // Replace with your actual publishable API key
 
         // Use Stripe API to create a checkout session and handle payment
         // This part usually involves server-side code to create a session
